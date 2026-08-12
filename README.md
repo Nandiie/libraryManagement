@@ -20,7 +20,7 @@ A desktop library management system built with **Python, Tkinter and SQLite**
 - SQLite
 - Tkinter
 
-- # What I learned
+# What I learned
 
 This project helped me practice:
 
