@@ -9,6 +9,17 @@ import sqlite3
 connection = sqlite3.connect("library.db")
 cursor = connection.cursor()
 
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS books(
+    book_id INTEGER PRIMARY KEY,
+    title TEXT,
+    author TEXT,
+    year INTEGER
+)
+""")
+
+connection.commit()
+
 # FUNCTIONS
 
 def add_book():
